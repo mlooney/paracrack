@@ -6,7 +6,7 @@ require 'openssl'
 hash = ARGV.shift
 salt= ARGV.shift
 
-puts "Crackin! #{Base64.decode64(hash).length} #{hash} #{salt}"
+puts "Crackin! #{hash} #{salt}"
 hash = Base64.decode64(hash)
 
 0.upto(9999) do |n|
